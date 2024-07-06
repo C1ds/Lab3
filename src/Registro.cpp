@@ -118,20 +118,7 @@ void Registro::mostrarElementos() {
 }
 
 void Registro::modificarElemento(int& id, int &opcion) {
-    switch (opcion) {
-        //Modificar Id
-        case 1: {break;}
-        //Modificar Cuenta Origen
-        case 2: {break;}
-        //Modificar Cuenta Destino
-        case 3: {break;}
-        //Modificar Monto
-        case 4: {break;}
-        //Modificar Fecha y Hora
-        case 5: {break;}
-        //Modificar Ubicacion
-        case 6: {break;}
-    }
+    
 }
 
 Registro::~Registro() {}

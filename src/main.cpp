@@ -91,7 +91,48 @@ int main() {
                     cout << "Ingrese ID: ";
                     getline(cin, *data);
                     *id = funciones -> validarOpcion(*data);
-                    arbolAVL.modificarElemento(*id, *opcion);
+                    switch (*opcion) {
+                        //Modificar Id
+                        case 1: {
+                            int newId;
+                            cout << "Id: " << endl;
+                            getline(cin, *data);
+                            newId = funciones -> validarOpcion(*data);
+                            break;}
+                        //Modificar Cuenta Origen
+                        case 2: {break;}
+                            int newCuentaO;
+                            cout << "Cuenta origen" << endl;
+                            getline(cin, *data);
+                            newCuentaO = funciones -> validarOpcion(*data);
+                        //Modificar Cuenta Destino
+                        case 3: {
+                            int newCuentaD;
+                            cout << "Cuenta Destino" << endl;
+                            getline(cin, *data);
+                            newCuentaD = funciones -> validarOpcion(*data);
+                            break;}
+                        //Modificar Monto
+                        case 4: {
+                            int newMonto;
+                            cout << "Cuenta Monto" << endl;
+                            getline(cin, *data);
+                            newMonto = funciones -> validarOpcion(*data);
+                            break;}
+                        //Modificar Fecha y Hora
+                        case 5: {
+                            string fechaHora;
+                            cout << "fecha y Hora" << endl;
+                            getline(cin,fechaHora);
+                            break;}
+                        //Modificar Ubicacion
+                        case 6: {
+                            string ubicacion;
+                            cout << "Ubicacion" << endl;
+                            getline(cin,ubicacion);
+                            break;}
+                        default: {break;}
+                    }
                 }
                 else {
                     cout << "---Opcion Invalida---" << endl;
